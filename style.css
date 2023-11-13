@@ -6,7 +6,177 @@
   --Light-grayish-cyan: hsl(185, 41%, 84%);
   --Very-light-grayish-cyan: hsl(189, 41%, 97%);
   --White: hsl(0, 0%, 100%);
+  --Strong-cyan: hsl(172, 67%, 45%);
 }
 body {
   font-family: "Space Mono", monospace;
+  background-color: var(--Light-grayish-cyan);
+  margin: 0 auto;
+  font-size: 18px;
+  max-width: 1440px;
+}
+h1 {
+  color: var(--Very-dark-cyan);
+  font-size: 25px;
+  text-align: center;
+  padding: 50px 0 50px 0;
+  letter-spacing: 5px;
+}
+.main {
+  background-color: var(--White);
+  border-radius: 30px 30px 0 0;
+  padding: 20px 30px 20px 30px;
+}
+.toptitle {
+  padding-top: 10px;
+}
+p {
+  color: var(--Grayish-cyan);
+  margin: 0;
+  padding: 30px 0 10px 0;
+}
+.inputbox {
+  border: 1px solid black;
+  background-color: var(--Very-light-grayish-cyan);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  border: none;
+}
+.percentage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.percentage_box {
+  width: 145px;
+  height: 45px;
+  font-size: 23px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.percentage_box:hover {
+  cursor: pointer;
+}
+.darkgreen {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-grayish-cyan);
+}
+.darkgreen:hover {
+  background-color: var(--Strong-cyan);
+}
+.lightgreen {
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Dark-grayish-cyan);
+}
+.lightgreen::placeholder {
+  text-align: center;
+  font-size: 22px;
+}
+input {
+  text-align: right;
+  height: 25px;
+  font-size: 25px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  color: var(--Very-dark-cyan);
+  font-family: "Space Mono", monospace;
+}
+input:hover {
+  cursor: pointer;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.amountbox {
+  border: 1px solid black;
+  margin-top: 30px;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 10px;
+  color: var(--Very-light-grayish-cyan);
+  padding: 1.2rem;
+}
+.person {
+  padding: 0;
+}
+.top_box,
+.bottom_box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.top_box {
+  padding: 20px 0 30px 0;
+}
+button {
+  width: 100%;
+  background-color: #0d696c;
+  color: var(--Very-dark-cyan);
+  height: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--Strong-cyan);
+}
+.tip_amount,
+.total_amount {
+  text-align: left;
+}
+.result {
+  font-size: 30px;
+  color: var(--Strong-cyan);
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 470px;
+    border-radius: 30px;
+  }
+  .part1,
+  .part2 {
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .part2 {
+    height: 400px;
+  }
+  .part2 {
+    padding: 20px 50px 20px 50px;
+    margin: 10px 0 0 0;
+  }
+  .percentage {
+    gap: 1rem;
+  }
+  .percentage_box {
+    width: 106px;
+  }
+  button {
+    margin-top: 160px;
+  }
+  .result {
+    font-size: 40px;
+  }
 }
