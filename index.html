@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -16,28 +15,45 @@
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    <div>
-      <p>Bill</p>
-      <div class="bill_input">
-        <input type="text" class="lightgreen" />
+    <h1>SPLITTER</h1>
+    <div class="main">
+      <div class="part1">
+        <p class="toptitle">Bill</p>
+        <div class="inputbox">
+          <img src="./images/icon-dollar.svg" alt="dollar" />
+          <input type="text" placeholder="0" />
+        </div>
+        <p>Select Tip %</p>
+        <div class="percentage">
+          <div class="darkgreen percentage_box">5%</div>
+          <div class="darkgreen percentage_box">10%</div>
+          <div class="darkgreen percentage_box">15%</div>
+          <div class="darkgreen percentage_box">25%</div>
+          <div class="darkgreen percentage_box">50%</div>
+          <input class="lightgreen percentage_box" placeholder="Custom" />
+        </div>
+        <p>Number of People</p>
+        <div class="inputbox">
+          <img src="./images/icon-person.svg" alt="person_icon" />
+          <input type="text" placeholder="0" />
+        </div>
       </div>
-      <p>Select Tip %</p>
-      <div class="percentage">
-        <div class="darkgreen">5%</div>
-        <div class="darkgreen">10%</div>
-        <div class="darkgreen">15%</div>
-        <div class="darkgreen">25%</div>
-        <div class="darkgreen">50%</div>
-        <div class="lightgreen">Custom</div>
-      </div>
-      <p>Number of People</p>
-      <input type="text" class="lightgreen" />
-      <div class="amountbox">
-        <div class="tip_amount">Tip Amount / person</div>
-        <div class="result" id="tip_amount">$0.00</div>
-        <div class="total_amount">Total / person</div>
-        <div class="result" id="total_amount">$0.00</div>
-        <button class="darkgreen">Reset</button>
+      <div class="part2 amountbox">
+        <div class="top_box">
+          <div class="tip_amount">
+            Tip Amount
+            <p class="person">/ person</p>
+          </div>
+          <div class="result" id="tip_amount">$0.00</div>
+        </div>
+        <div class="bottom_box">
+          <div class="total_amount">
+            Total
+            <p class="person">/ person</p>
+          </div>
+          <div class="result" id="total_amount">$0.00</div>
+        </div>
+        <button class="graygreen">Reset</button>
       </div>
     </div>
 
