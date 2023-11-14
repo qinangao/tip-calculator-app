@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
@@ -21,21 +20,25 @@
         <p class="toptitle">Bill</p>
         <div class="inputbox">
           <img src="./images/icon-dollar.svg" alt="dollar" />
-          <input type="text" placeholder="0" />
+          <input type="text" placeholder="0" id="bill_input" />
         </div>
         <p>Select Tip %</p>
         <div class="percentage">
-          <div class="darkgreen percentage_box">5%</div>
-          <div class="darkgreen percentage_box">10%</div>
-          <div class="darkgreen percentage_box">15%</div>
-          <div class="darkgreen percentage_box">25%</div>
-          <div class="darkgreen percentage_box">50%</div>
-          <input class="lightgreen percentage_box" placeholder="Custom" />
+          <div class="darkgreen percentage_box" id="0.05">5%</div>
+          <div class="darkgreen percentage_box" id="0.1">10%</div>
+          <div class="darkgreen percentage_box" id="0.15">15%</div>
+          <div class="darkgreen percentage_box" id="0.25">25%</div>
+          <div class="darkgreen percentage_box" id="0.5">50%</div>
+          <input
+            class="lightgreen percentage_box"
+            placeholder="Custom"
+            id="custom"
+          />
         </div>
         <p>Number of People</p>
         <div class="inputbox">
           <img src="./images/icon-person.svg" alt="person_icon" />
-          <input type="text" placeholder="0" />
+          <input type="text" placeholder="0" id="numberofppl" />
         </div>
       </div>
       <div class="part2 amountbox">
@@ -63,5 +66,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="./index.js"></script>
   </body>
 </html>
